@@ -1,0 +1,32 @@
+DELETE http://localhost/api/portal/15
+
+###
+
+GET http://localhost/api/portal/1
+
+###
+
+GET http://localhost/api/portal
+
+###
+
+POST http://localhost/api/portal
+content-type: application/json
+
+{
+    "title": "second босс", 
+    "image": "fk",
+    "description": "tozhe",
+    "info": "fff",
+    "type": "Робот"
+}
+
+
+###
+
+PUT http://localhost/api/portal/13
+content-type: application/json
+
+{
+    "description": "Огурчик Рик"
+}
