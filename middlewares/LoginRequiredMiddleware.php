@@ -12,6 +12,7 @@ class LoginRequiredMiddleware extends BaseMiddleware {
         $query->execute();
 
         $pw_from_db = $query->fetch(PDO::FETCH_ASSOC);
+        echo($pw_from_db['password']);
 
         if ($password != $pw_from_db['password']) {
             header('WWW-Authenticate: Basic realm="Portal objects"');
